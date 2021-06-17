@@ -17,6 +17,16 @@ const routes = [
     },
     component: () => import('../views/login')
   },
+  {
+    path: '/home',
+    name: 'home',
+    meta: {
+      title: '课程列表',
+      keepAlive: true, // 需要被缓存
+    },
+    component: () => import('../views/home')
+  }
+
 ]
 
 const router = new VueRouter({

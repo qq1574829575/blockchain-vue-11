@@ -32,6 +32,8 @@
 
 <script>
 
+import router from "../../router";
+
 export default {
   name: 'Login',
   data() {
@@ -59,6 +61,7 @@ export default {
                 type: 'success',
                 message: '登录成功'
               })
+              router.push({ path: '/home' })
             } else {
               this.$message({
                 type: 'error',
